@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionTimingFunction: {
+        "custom-ease": "cubic-bezier(.58,.01,.95,.35)",
+      }
     },
   },
   plugins: [],
