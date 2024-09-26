@@ -1,14 +1,21 @@
 import { gasoekOne } from "@/app/font";
-import cn from "@/utils/function";
+import Project from "../project";
 
 const projects = [
   {
     "name": "Pixel War",
     "date": "2023-2024",
+    "image": "pixelwar.png",
   },
   {
     "name": "Hacker's Journey",
     "date": "2023-2024",
+    "image": "hackerjourney.png",
+  },
+  {
+    "name": "Forum Associatif",
+    "date": "2023-2024",
+    "image": "forumassociatif.png",
   },
 ]
 
@@ -20,18 +27,7 @@ const ProjectsSection = () => {
       </h2>
       <div className="flex flex-col w-full">
         {projects.map((project, index) => (
-          <div 
-            key={`project:${index}`}
-            className={cn(
-              "h-40 flex items-center justify-between p-8",
-              index === 0 
-                ? "border-t border-b border-gray-800" 
-                : "border-b border-gray-800"
-            )}
-          >
-            <h3 className="text-6xl text-gray-50 font-medium">{project.name}</h3>
-            <p className="text-gray-400">{project.date}</p>
-          </div>
+          <Project key={`project:${index}`}  project={project} index={index} />
         ))}
       </div>
     </div>
