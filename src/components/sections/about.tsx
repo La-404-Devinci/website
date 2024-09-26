@@ -13,7 +13,7 @@ const AboutSection = () => {
         <div className="max-w-2xl w-full text-xl font-medium leading-8">
           <p>
             404 Devinci is an association focused on web development and UI/UX
-            design. We're also interested in emerging technologies such as AI
+            design. We&apos;re also interested in emerging technologies such as AI
             and IoT. Our aim is to bring together students who are passionate
             about the digital world and create innovative projects together.
           </p>
