@@ -1,7 +1,6 @@
-import { gasoekOne } from "@/app/font";
-import cn from "@/utils/function";
 import Image from "next/image";
 import Arrow from "../arrow";
+import H2 from "../heading2";
 
 const members = [
   {
@@ -24,25 +23,24 @@ const members = [
 const TeamSection = () => {
   return ( 
     <div className="w-full max-w-[1700px] mx-auto mt-80 px-5 lg:px-10">
-      <div className="flex justify-between items-end">
-        <h2 className={cn(
-          gasoekOne.className,
-          "uppercase text-7xl text-gray-50"
-        )}>
+      <div className="flex justify-between sm:items-end flex-col 
+        sm:flex-row"
+        >
+        <H2>
           Our team
-        </h2>
-        <div className="flex items-center gap-2">
+        </H2>
+        <div className="flex items-center gap-2 max-sm:mt-4">
           <Arrow color={50} />
-        <span className="uppercase text-lg">
-          Meet the team
-        </span>
+          <span className="uppercase text-lg ">
+            Meet the team
+          </span>
         </div>
       </div>
-      <div className="flex items-center gap-5 mt-12">
+      <div className="flex items-center gap-5 sm:mt-12 flex-wrap">
         {members.map((member, index) => (
           <div 
             key={`member:${index}`} 
-            className="flex flex-1 flex-col gap-2"
+            className="flex flex-1 flex-col gap-2 min-w-56"
           >
             <div className="relative w-full overflow-hidden aspect-square bg-black">
               {member.image ? (

@@ -1,4 +1,4 @@
-import { gasoekOne } from "@/app/font";
+import H2 from "../heading2";
 import Project from "../project";
 
 const projects = [
@@ -22,9 +22,9 @@ const projects = [
 const ProjectsSection = () => {
   return ( 
     <div className="w-full max-w-[1700px] mx-auto mt-40 px-5 lg:px-10 flex flex-col items-center gap-12">
-      <h2 className={`${gasoekOne.className} uppercase text-7xl text-gray-50`}>
+      <H2>
         What we made
-      </h2>
+      </H2>
       <div className="flex flex-col w-full">
         {projects.map((project, index) => (
           <Project key={`project:${index}`}  project={project} index={index} />
