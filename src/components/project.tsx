@@ -2,16 +2,13 @@
 
 import { useMediaQuery } from "@/hooks/use-media-query";
 import cn from "@/utils/function";
+import { ProjectType } from "@/utils/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
 interface ProjectProps {
-  project: {
-    name: string;
-    date: string;
-    image: string;
-  };
+  project: ProjectType;
   index: number;
 }
 
