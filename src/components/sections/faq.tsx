@@ -1,5 +1,6 @@
-import { gasoekOne } from "@/app/font";
+import { montserrat } from "@/app/font";
 import cn from "@/utils/function";
+import H2 from "../heading2";
 
 const faqData = {
   "fr": [
@@ -53,11 +54,13 @@ const faqData = {
 
 const FaqSection = () => {
   return (
-    <div className="w-full max-w-[1700px] mx-auto my-80 px-5 lg:px-10 flex flex-col lg:flex-row lg: justify-between gap-y-12 gap-x-5 ">
-      <h2 className="uppercase text-7xl text-gray-50 inline-flex flex-col flex-shrink-0">
-        <span>questions &</span>
-        <span className={cn(gasoekOne.className)}>answers</span>
-      </h2>
+    <div className="w-full max-w-[1700px] mx-auto my-80 px-5 lg:px-10 flex flex-col 
+      lg:flex-row lg: justify-between gap-y-12 gap-x-10 "
+    >
+      <H2 className="flex flex-col flex-shrink-0">
+        <span className={cn(montserrat.className)}>questions &</span>
+        <span> answers</span>
+      </H2>
       <div className="flex flex-col w-full max-w-3xl">
         {faqData.en.map(({ question, answer }, index) => (
           <div 

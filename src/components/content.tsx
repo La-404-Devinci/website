@@ -17,7 +17,7 @@ const BottomFooter = () => {
       <div className="flex flex-col gap-8">
         <h2 className={cn(
           gasoekOne.className,
-          'uppercase text-8xl text-gray-900'
+          'uppercase text-6xl sm:text-8xl text-gray-900'
         )}>
           404 Devinci
         </h2>
@@ -34,7 +34,7 @@ const Nav = () => {
     return (
       <div className="w-full flex justify-between">
         <div className="flex flex-col gap-3 text-gray-900">
-          <h3 className="uppercase text-xl font-semibold">Social media</h3>
+          <h3 className="uppercase text-lg sm:text-xl font-semibold">Social media</h3>
           <div className="flex flex-col">
             <div>
               <a 
@@ -63,8 +63,8 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className="w-56 h-16 rounded-full border border-black flex items-center 
-          justify-center text-gray-900 text-xl relative group overflow-hidden"
+        <div className="w-40 h-14 sm:w-56 sm:h-16 rounded-full border border-black flex items-center 
+          justify-center text-gray-900 text-lg sm:text-xl relative group overflow-hidden"
         >
           <a href="mailto:404@devinci.fr" className="z-10">
             404@devinci.fr
