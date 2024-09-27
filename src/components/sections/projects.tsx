@@ -4,16 +4,19 @@ import Project from "../project";
 const projects = [
   {
     "name": "Pixel War",
+    "slug": "pixel-war",
     "date": "2023-2024",
     "image": "pixelwar.png",
   },
   {
     "name": "Hacker's Journey",
+    "slug": "hacker-journey",
     "date": "2023-2024",
     "image": "hackerjourney.png",
   },
   {
     "name": "Forum Associatif",
+    "slug": "forum-associatif",
     "date": "2023-2024",
     "image": "forumassociatif.png",
   },
