@@ -6,6 +6,7 @@ export type MemberType = {
 
 export type ProjectType = {
     name: string,
+    slug: string,
     date: string,
     image: string,
 }
