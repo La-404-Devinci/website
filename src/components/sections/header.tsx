@@ -1,22 +1,16 @@
-import { gasoekOne } from "@/app/font";
 import Image from "next/image";
+import AnimatedHeading1 from "../animated-heading1";
 import Timer from "../timer";
 
+
 const Header = () => {
+
+
   return ( 
     <div className="w-full h-screen flex flex-col gap-8 px-5 lg:px-10">
       {/* HEADING */}
         <div className="w-full flex justify-between items-end flex-wrap pt-14">
-          <h1 className={`${gasoekOne.className} text-5xl md:text-7xl xl:text-[100px] leading-none`}>
-            <div className="flex items-center gap-8">
-              <span className="uppercase">404</span>
-              <div className="h-[1px] bg-gray-50 w-full translate-y-2" />
-            </div>
-            <div>
-              <span className="uppercase">Devinci</span>
-            </div>
-          </h1>
-
+          <AnimatedHeading1 />
           <div className="font-medium flex flex-col">
             <span className="uppercase text-gray-400 ml-auto text-xs md:text-sm">Paris</span>
             <Timer />
