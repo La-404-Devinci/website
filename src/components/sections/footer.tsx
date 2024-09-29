@@ -1,3 +1,4 @@
+
 import Content from "../content";
 
 const Footer = () => {
@@ -9,6 +10,7 @@ const Footer = () => {
     <div className='fixed bottom-0 h-[640px] w-full bg-gray-300'>
       <Content />
     </div>
+    
   </div>
    );
 }

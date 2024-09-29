@@ -1,24 +1,25 @@
-import H2 from "../heading2";
+'use client'
 
-const AboutSection = () => {
+import H2 from "../heading2";
+import { useI18n, useScopedI18n } from '../../locales/client'
+
+
+const AboutSection =  async () => {
+  const t = useI18n()
+  const scopedT = useScopedI18n('hello')  
   return (
     <div className="w-full mt-80 px-5 lg:px-10 flex items-center justify-center relative">
       <div className="flex flex-col gap-12 z-10">
         <H2>
-          Who we are
+          {t('about.who-we-are.title')}
         </H2>
         <div className="max-w-2xl w-full lg:text-xl font-medium leading-6 lg:leading-8">
           <p>
-            404 Devinci is an association focused on web development and UI/UX
-            design. We&apos;re also interested in emerging technologies such as AI
-            and IoT. Our aim is to bring together students who are passionate
-            about the digital world and create innovative projects together.
+
+            {t('about.who-we-are.description')}
           </p>
           <p className="mt-6">
-            We work on the creation of web sites and applications, both in-house
-            and in collaboration with our partners. We are also involved in
-            communication activities and organize various events related to our
-            field.
+            {t('about.who-we-are.description2')}
           </p>
         </div>
       </div>

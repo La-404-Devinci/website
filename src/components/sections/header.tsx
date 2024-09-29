@@ -1,4 +1,4 @@
-import { gasoekOne } from "@/app/font";
+import { gasoekOne } from "@/app/[locale]/font";
 import Image from "next/image";
 import Timer from "../timer";
 

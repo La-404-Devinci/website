@@ -1,4 +1,4 @@
-import { gasoekOne } from "@/app/font";
+import { gasoekOne } from "@/app/[locale]/font";
 import cn from "@/utils/function";
 import React from "react";
 

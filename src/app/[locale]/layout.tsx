@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { montserrat } from "./font";
 import "./globals.css";
+import { Providers } from "./providers";
 
 
 export const metadata: Metadata = {
@@ -10,15 +11,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
     <html lang="en">
       <body
         className={montserrat.className} 
       >
-        {children}
+        <Providers locale={params.locale}>
+          {children}
+        </Providers>
       </body>
     </html>
   );
