@@ -1,19 +1,16 @@
-import { gasoekOne } from "@/app/font";
-import cn from "@/utils/function";
+import H2 from "../heading2";
 
 const AboutSection = () => {
   return (
     <div className="w-full mt-80 px-5 lg:px-10 flex items-center justify-center relative">
       <div className="flex flex-col gap-12 z-10">
-        <h2
-          className={cn(gasoekOne.className, "uppercase text-7xl text-gray-50")}
-        >
+        <H2>
           Who we are
-        </h2>
-        <div className="max-w-2xl w-full text-xl font-medium leading-8">
+        </H2>
+        <div className="max-w-2xl w-full lg:text-xl font-medium leading-6 lg:leading-8">
           <p>
             404 Devinci is an association focused on web development and UI/UX
-            design. We're also interested in emerging technologies such as AI
+            design. We&apos;re also interested in emerging technologies such as AI
             and IoT. Our aim is to bring together students who are passionate
             about the digital world and create innovative projects together.
           </p>

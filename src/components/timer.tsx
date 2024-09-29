@@ -20,7 +20,7 @@ const Timer = () => {
   if (!mounted) return;
 
   return ( 
-    <span className="uppercase text-xl">{time}</span>
+    <span className="uppercase text-lg md:text-xl">{time}</span>
    );
 }
  
