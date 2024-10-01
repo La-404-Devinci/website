@@ -1,4 +1,4 @@
-import { montserrat } from "@/app/font";
+import { montserrat } from "@/app/[locale]/font"
 import cn from "@/utils/function";
 import H2 from "../heading2";
 

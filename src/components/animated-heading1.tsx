@@ -1,6 +1,6 @@
 "use client";
 
-import { gasoekOne } from "@/app/font";
+import { gasoekOne } from "@/app/[locale]/font";
 import { easeInOut, motion } from "framer-motion";
 
 const AnimatedHeading1 = () => {
