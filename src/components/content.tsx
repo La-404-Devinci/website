@@ -2,6 +2,7 @@ import { gasoekOne } from "@/app/[locale]/font"
 import cn from "@/utils/function"
 import Arrow from "./arrow"
 import LocaleSwitcherSelect from "../components/buttons/SelectLocale";
+import { useTranslations } from "next-intl";
 
 
 export default function Content() {
@@ -15,6 +16,7 @@ export default function Content() {
 
 
 const BottomFooter = () => {
+  const t = useTranslations('Footer');
     return (
       <div className="flex flex-col gap-8">
         <h2 className={cn(
@@ -25,18 +27,21 @@ const BottomFooter = () => {
         </h2>
         <div className="w-full h-[1px] bg-gray-900" />
         <div className='flex items-center justify-between text-gray-900'>
-          <p>2024 © All Rights Reserved</p>
-          <p>Legal notices</p>
+          <p>{t('copyright')}</p>
+          <p>{t('legal-notices')}</p>
         </div>
       </div>
     )
 }
 
 const Nav = () => {
+  const t = useTranslations('Footer');
     return (
       <div className="w-full flex justify-between">
         <div className="flex flex-col gap-3 text-gray-900">
-          <h3 className="uppercase text-lg sm:text-xl font-semibold">Social media</h3>
+          <h3 className="uppercase text-lg sm:text-xl font-semibold">
+            {t('social-media')}
+          </h3>
           <div className="flex flex-col">
             <div>
               <a 

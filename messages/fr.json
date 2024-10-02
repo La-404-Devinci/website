@@ -1,0 +1,41 @@
+{
+  "HomePage": {
+    "title": "Bonjour le monde!",
+    "about": "Aller à la page d'à propos"
+  },
+  "ProjectsSection": {
+    "title": "Ce que nous avons fait",
+    "pixel-war": "Pixel War",
+    "hacker-journey": "Hacker Journey",
+    "forum-associatif": "Forum Associatif"
+  },
+  "AboutSection": {
+    "title": "Qui sommes-nous",
+    "description": "404 Devinci est une association indépendante et autonome qui se consacre à la création de sites web et d'applications pour les personnes à mobilité réduite. Nous sommes également intéressés par l'économie numérique et l'innovation, et nous sommes fiers de contribuer à la société en créant des projets concrets et en améliorant nos compétences techniques.",
+    "description-2": "Nous travaillons sur la création de sites web et d'applications, à la fois en tant que membre de l'association et en tant que contributeur externe. Nous sommes également impliqués dans des communications et organisons des événements liés à notre secteur."
+  },
+  "TeamSection": {
+    "title": "Notre équipe",
+    "meet-the-team": "Rencontrer l'équipe",
+    "secretary": "Secrétaire ・ Fullstack Développeur",
+    "president": "Président ・ Fullstack Développeur",
+    "treasurer": "Trésorier ・ Fullstack Développeur"
+  },
+  "FaqSection": {
+    "title": "questions &",
+    "answers": "réponses",
+    "question-1": "Qui peut rejoindre l'association 404 Devinci ?",
+    "answer-1": "Que tu sois débutant ou expert, si tu es étudiant au pôle universitaire Léonard de Vinci, tu peux nous rejoindre !",
+    "question-2": "Dois-je avoir des compétences en coding pour rejoindre l'association ?",
+    "answer-2": "Non ! Nous recrutons des designers UX/UI, des chargés de communication, et bien sûr des développeurs. Si tu es passionné par le web, tu es le bienvenu !",
+    "question-3": "Y a-t-il des frais pour devenir membre de la 404 Devinci ?",
+    "answer-3": "Non, l'adhésion à l'association est gratuite. Notre objectif est de créer un groupe accessible à tous pour travailler sur des projets concrets et améliorer nos skills.",
+    "question-4": "Quels sont les avantages à rejoindre la 404 Devinci ?",
+    "answer-4": "En nous rejoingnant, tu auras l'opportunité de travailler sur des projets concrets, d'améliorer tes compétences techniques, et de rencontrer d'autres passionnés du développement web. Tu pourras également enrichir ton CV avec des expériences pratiques."
+  }, 
+  "Footer": {
+    "copyright": "2024 © Tous droits réservés",
+    "legal-notices": "Mentions légales", 
+    "social-media": "Réseaux sociaux"
+  }
+}

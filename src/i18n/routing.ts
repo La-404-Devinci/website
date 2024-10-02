@@ -6,10 +6,8 @@ export const routing = defineRouting({
   locales: ['en', 'fr'],
  
   // Used when no locale matches
-  defaultLocale: 'en'
+  defaultLocale: 'fr'
 });
  
-// Lightweight wrappers around Next.js' navigation APIs
-// that will consider the routing configuration
 export const {Link, redirect, usePathname, useRouter} =
   createSharedPathnamesNavigation(routing);
