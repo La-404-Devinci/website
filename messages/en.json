@@ -1,0 +1,43 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page", 
+    "404-devinci": "404 Devinci"
+  },
+  "ProjectsSection": {
+    "title": "What we made",
+    "pixel-war": "Pixel War",
+    "hacker-journey": "Hacker Journey",
+    "forum-associatif": "Associatif Forum"
+  },
+  "AboutSection": {
+    "title": "Who we are",
+    "description": "404 Devinci is an association focused on web development and UI/UX design. We're also interested in emerging technologies such as AI and IoT. Our aim is to bring together students who are passionate about the digital world and create innovative projects together.",
+    "description-2": "We work on the creation of web sites and applications, both in-house and in collaboration with our partners. We are also involved in communication activities and organize various events related to our field."
+  },
+  "TeamSection": {
+    "title": "Our team",
+    "meet-the-team": "Meet the team",
+    "secretary": "Secretary ・ Fullstack Developer",
+    "president": "President ・ Fullstack Developer",
+    "treasurer": "Treasurer ・ Fullstack Developer"
+  },
+  "FaqSection": {
+    "title": "questions &",
+    "answers": "answers",
+    "question-1": "Who can join the 404 Devinci association?",
+    "answer-1": "Whether you are a beginner or an expert, if you are a student at the Léonard de Vinci University, you can join us!",
+    "question-2": "Do I need coding skills to join the association?",
+    "answer-2": "No! We recruit UX/UI designers, communication officers, and of course developers. If you are passionate about the web, you are welcome!",
+    "question-3": "Are there any fees to become a member of 404 Devinci?",
+    "answer-3": "No, membership in the association is free. Our goal is to create a group accessible to all to work on concrete projects and improve our skills.",
+    "question-4": "What are the benefits of joining 404 Devinci?",
+    "answer-4": "By joining us, you will have the opportunity to work on real projects, improve your technical skills, and meet other web development enthusiasts. You will also be able to enhance your resume with practical experiences."
+}, 
+"Footer": {
+    "copyright": "2024 © All Rights Reserved",
+    "legal-notices": "Legal notices",
+    "social-media": "Social media"
+  }
+
+}

@@ -3,6 +3,7 @@ import AnimatedHeading1 from "../animated-heading1";
 import Timer from "../timer";
 
 
+
 const Header = () => {
 
 
@@ -31,6 +32,7 @@ const Header = () => {
             height={300}
             className="absolute bottom-0 left-0 transform  " 
           />
+       
 
         </div>
     </div>
