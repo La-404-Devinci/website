@@ -1,6 +1,8 @@
 import { gasoekOne } from "@/app/[locale]/font"
 import cn from "@/utils/function"
 import Arrow from "./arrow"
+import LocaleSwitcherSelect from "../components/buttons/SelectLocale";
+
 
 export default function Content() {
   return (
@@ -62,6 +64,7 @@ const Nav = () => {
             </div>
           </div>
         </div>
+        <LocaleSwitcherSelect />
 
         <div className="w-40 h-14 sm:w-56 sm:h-16 rounded-full border border-black flex items-center 
           justify-center text-gray-900 text-lg sm:text-xl relative group overflow-hidden"
