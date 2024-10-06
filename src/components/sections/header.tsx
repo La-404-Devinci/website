@@ -1,20 +1,20 @@
 import Image from "next/image";
 import AnimatedHeading1 from "../animated-heading1";
+import LocaleSwitcherSelect from "../buttons/select-locale";
 import Timer from "../timer";
 
-
-
 const Header = () => {
-
-
   return ( 
     <div className="w-full h-screen flex flex-col gap-8 px-5 lg:px-10">
       {/* HEADING */}
         <div className="w-full flex justify-between items-end flex-wrap pt-14">
           <AnimatedHeading1 />
-          <div className="font-medium flex flex-col">
-            <span className="uppercase text-gray-400 ml-auto text-xs md:text-sm">Paris</span>
-            <Timer />
+          <div className="flex flex-col justify-between h-full">
+            <LocaleSwitcherSelect />
+            <div className="font-medium flex flex-col text-end">
+              <span className="uppercase text-gray-400 ml-auto text-xs md:text-sm">Paris</span>
+              <Timer />
+            </div>
           </div>
         </div>
         {/* BANNER */}
@@ -32,8 +32,6 @@ const Header = () => {
             height={300}
             className="absolute bottom-0 left-0 transform  " 
           />
-       
-
         </div>
     </div>
    );

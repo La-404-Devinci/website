@@ -1,8 +1,8 @@
-import { gasoekOne } from "@/app/[locale]/font"
-import cn from "@/utils/function"
-import Arrow from "./arrow"
-import LocaleSwitcherSelect from "../components/buttons/SelectLocale";
+import { gasoekOne } from "@/app/[locale]/font";
+import cn from "@/utils/function";
 import { useTranslations } from "next-intl";
+import Arrow from "./arrow";
+import LocaleSwitcherSelect from "./buttons/select-locale";
 
 
 export default function Content() {
@@ -19,12 +19,15 @@ const BottomFooter = () => {
   const t = useTranslations('Footer');
     return (
       <div className="flex flex-col gap-8">
-        <h2 className={cn(
-          gasoekOne.className,
-          'uppercase text-6xl sm:text-8xl text-gray-900'
-        )}>
-          404 Devinci
-        </h2>
+        <div className="flex items-end justify-between">
+          <h2 className={cn(
+            gasoekOne.className,
+            'uppercase text-6xl sm:text-8xl text-gray-900'
+          )}>
+            404 Devinci
+          </h2>
+          <LocaleSwitcherSelect footer />
+        </div>
         <div className="w-full h-[1px] bg-gray-900" />
         <div className='flex items-center justify-between text-gray-900'>
           <p>{t('copyright')}</p>
@@ -69,8 +72,6 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <LocaleSwitcherSelect />
-
         <div className="w-40 h-14 sm:w-56 sm:h-16 rounded-full border border-black flex items-center 
           justify-center text-gray-900 text-lg sm:text-xl relative group overflow-hidden"
         >
