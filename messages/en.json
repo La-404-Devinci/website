@@ -8,7 +8,7 @@
     "title": "What we made",
     "pixel-war": "Pixel War",
     "hacker-journey": "Hacker Journey",
-    "forum-associatif": "Associatif Forum"
+    "forum-associatif": "Association Forum"
   },
   "AboutSection": {
     "title": "Who we are",
@@ -42,18 +42,36 @@
   "ProjectPage": {
     "pixel-war": {
       "title": "Pixel War",
-      "description": "Pixel War is a multiplayer game where players can compete against each other in real time. The game is inspired by the classic arcade game Space Invaders, but with a modern twist. Players can choose from a variety of ships and weapons, and compete in different game modes. The game is designed to be fast-paced and action-packed, with a focus on skill and strategy. Pixel War is available on iOS and Android, and is free to play.",
-      "release": 2023,
-      "agency": "404 Devinci",
-      "services": ["UI/UX design", "Development", "concept"]
+      "description": "The 404 Devinci's annual project, Pixel//War, is a collaborative experience where each member can contribute to a huge pixelated mural, directly inspired by Reddit's r/place. The principle is simple: you add one pixel at a time, but together we create something incredible. Every choice counts, every pixel matters. It's both creative and strategic, perfect for building community spirit while having fun!",
+      "release-name": "Release",
+      "release-value": "2024",
+      "agency-name": "Agency",
+      "agency-value": "404 Devinci",
+      "services": "UI/UX design, Development, Concept",
+      "images": "/img/pixelwar.png"
+    },
+    "hacker-journey": {
+      "title": "Hacker Journey",
+      "description": "Hacker's Journey invites you to dive into the world of cybersecurity in a fun and accessible way. With a series of simple challenges, you can discover the basics of cyber defense while having fun. Whether you're a beginner or just curious, each exercise is designed to make learning fun. It's an adventure for everyone, where each step teaches you a little more about this fascinating world.",
+      "release-name": "Release",
+      "release-value": "2024",
+      "agency-name": "Agency",
+      "agency-value": "404 Devinci",
+      "services": "UI/UX design, Development, Concept",
+      "images": "/img/hackerjourney.png"
     },
     "forum-associatif": {
-      "title": "Forum Association",
-      "description": "Pixel War is a multiplayer game where players can compete against each other in real time. The game is inspired by the classic arcade game Space Invaders, but with a modern twist. Players can choose from a variety of ships and weapons, and compete in different game modes. The game is designed to be fast-paced and action-packed, with a focus on skill and strategy. Pixel War is available on iOS and Android, and is free to play.",
-      "release": 2024,
-      "agency": "404 Devinci",
-      "services": ["UI/UX design", "Development", "concept"]
-    }
+      "title": "Association Forum",
+      "description": "The Association Forum is the meeting point for all the associations in the Pôle Léonard de Vinci! This website lets you discover the activities and projects of each association, while offering members the possibility of personalizing their page as they wish, thanks to a simple and intuitive editor inspired by Notion. It's a super-practical tool for gathering all your information, and above all for giving visibility to each association.",
+      "release-name": "Release",
+      "release-value": "2024",
+      "agency-name": "Agency",
+      "agency-value": "404 Devinci",
+      "services": "UI/UX design, Development, Concept",
+      "images": "/img/forumassociatif.png"
+    },
+    "close-button": "Close",
+    "launch-button": "Launch project"
   }
 
 }

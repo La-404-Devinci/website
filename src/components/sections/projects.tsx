@@ -30,7 +30,7 @@ const ProjectsSection = () => {
 
   const t = useTranslations('ProjectsSection');
   return ( 
-    <div className="w-full max-w-[1700px] mx-auto mt-40 px-5 lg:px-10 flex flex-col items-center gap-12">
+    <div className="w-full max-w-[1700px] mx-auto mt-40 px-4 lg:px-10 flex flex-col items-center gap-12">
       <H2>
         {t('title')}
       </H2>

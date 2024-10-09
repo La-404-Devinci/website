@@ -1,10 +1,10 @@
+import { useTranslations } from 'next-intl';
 import H2 from "../heading2";
-import {useTranslations} from 'next-intl';
 
 const AboutSection = () => {
   const t = useTranslations('AboutSection');
   return (
-    <div className="w-full mt-80 px-5 lg:px-10 flex items-center justify-center relative">
+    <div className="w-full mt-80 px-4 lg:px-10 flex items-center justify-center relative">
       <div className="flex flex-col gap-12 z-10">
         <H2>
           {t('title')}

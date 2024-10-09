@@ -1,7 +1,7 @@
 import { montserrat } from "@/app/[locale]/font";
 import cn from "@/utils/function";
+import { useTranslations } from 'next-intl';
 import H2 from "../heading2";
-import {useTranslations} from 'next-intl';
 
 const faqData = [
   {
@@ -33,7 +33,7 @@ const FaqSection = () => {
 
   return (
     <div
-      className="w-full max-w-[1700px] mx-auto my-80 px-5 lg:px-10 flex flex-col 
+      className="w-full max-w-[1700px] mx-auto my-80 px-4 lg:px-10 flex flex-col 
       lg:flex-row lg: justify-between gap-y-12 gap-x-10 "
     >
       <H2 className="flex flex-col flex-shrink-0">

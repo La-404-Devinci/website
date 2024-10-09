@@ -30,7 +30,7 @@ const TeamSection = () => {
 
   const t = useTranslations('TeamSection');
   return ( 
-    <div className="w-full max-w-[1700px] mx-auto mt-80 px-5 lg:px-10">
+    <div className="w-full max-w-[1700px] mx-auto mt-80 px-4 lg:px-10">
       <div className="flex justify-between sm:items-end flex-col 
         sm:flex-row"
         >

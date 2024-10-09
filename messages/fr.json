@@ -38,6 +38,40 @@
     "copyright": "2024 © Tous droits réservés",
     "legal-notices": "Mentions légales", 
     "social-media": "Réseaux sociaux"
+  },
+  "ProjectPage": {
+    "pixel-war": {
+      "title": "Pixel War",
+      "description": "Le projet annuel de la 404 Devinci, Pixel//War, est une expérience collaborative où chaque membre peut contribuer à une immense fresque pixelisée, directement inspirée de r/place de Reddit. Le principe est simple : tu ajoutes un pixel à la fois, mais ensemble, on crée quelque chose d'incroyable. Chaque choix compte, chaque pixel a son importance. C'est à la fois créatif et stratégique, parfait pour renforcer l'esprit de communauté tout en s'amusant !",
+      "release-name": "Sortie",
+      "release-value": "2024",
+      "agency-name": "Agence",
+      "agency-value": "404 Devinci",
+      "services": "UI/UX design, Development, Concept",
+      "images": "/img/pixelwar.png"
+    },
+    "hacker-journey": {
+      "title": "Hacker Journey",
+      "description": "Hacker's Journey t'invite à plonger dans l'univers de la cybersécurité de façon ludique et accessible. Avec une série de challenges simples, tu peux découvrir les bases de la cyberdéfense tout en t'amusant. Que tu sois débutant ou simplement curieux, chaque exercice est conçu pour que tu apprennes en t'amusant. C'est une aventure à la portée de tous, où chaque étape t'enseigne un peu plus sur ce monde fascinant.",
+      "release-name": "Sortie",
+      "release-value": "2024",
+      "agency-name": "Agence",
+      "agency-value": "404 Devinci",
+      "services": "UI/UX design, Development, Concept",
+      "images": "/img/hackerjourney.png"
+    },
+    "forum-associatif": {
+      "title": "Forum Associatif",
+      "description": "Le Forum Associatif est le point de rencontre pour toutes les associations du Pôle Léonard de Vinci ! Ce site te permet de découvrir les activités et projets de chaque association, tout en offrant aux membres la possibilité de personnaliser leur page comme ils le souhaitent, grâce à un éditeur simple et intuitif inspiré de Notion. C'est un outil super pratique pour rassembler toutes les infos, et surtout pour donner de la visibilité à chaque association.",
+      "release-name": "Sortie",
+      "release-value": "2024",
+      "agency-name": "Agence",
+      "agency-value": "404 Devinci",
+      "services": "UI/UX design, Developpemnt, Concept",
+      "images": "/img/forumassociatif.png"
+    },
+    "close-button": "Fermer",
+    "launch-button": "Lancer le projet"
   }
 
 }

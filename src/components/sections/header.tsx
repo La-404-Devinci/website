@@ -5,7 +5,7 @@ import Timer from "../timer";
 
 const Header = () => {
   return ( 
-    <div className="w-full h-screen flex flex-col gap-8 px-5 lg:px-10">
+    <div className="w-full h-screen flex flex-col gap-8 px-4 lg:px-10">
       {/* HEADING */}
         <div className="w-full flex justify-between items-end flex-wrap pt-14">
           <AnimatedHeading1 />
