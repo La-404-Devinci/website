@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 interface ProjectProps {
   project: ProjectType;
   index: number;
+  locale?: "fr" | "en";
 }
 
 const anim = {
@@ -18,7 +19,7 @@ const anim = {
   closed: {width: 0}
 }
 
-const Project = ({ project, index }: ProjectProps) => {
+const Project = ({ project, index, locale }: ProjectProps) => {
 
   const [isMounted, setIsMounted] = useState(false);
   const isComputerOrLarger = useMediaQuery('(min-width: 1280px)');  
@@ -31,14 +32,14 @@ const Project = ({ project, index }: ProjectProps) => {
   
   if(!isComputerOrLarger) {
     return (
-      <a href={`/projects/${project.slug}`} className="w-full">
+      <a href={`${locale}/project/${project.slug}`} className="w-full">
         <MobileProject project={project} index={index} />
       </a>
     )
   }
 
   return (
-    <a href={`/projects/${project.slug}`} className="w-full">
+    <a href={`${locale}/project/${project.slug}`} className="w-full">
       <DesktopProject project={project} index={index} />
     </a>
   )

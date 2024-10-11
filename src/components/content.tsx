@@ -7,7 +7,7 @@ import LocaleSwitcherSelect from "./buttons/select-locale";
 
 export default function Content() {
   return (
-    <div className='max-w-[1700px] mx-auto py-8 px-5 lg:px-10 h-full w-full flex flex-col justify-between'>
+    <div className='max-w-[1700px] mx-auto py-8 px-4 lg:px-10 h-full w-full flex flex-col justify-between'>
       <Nav />
       <BottomFooter />
     </div>

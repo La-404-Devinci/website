@@ -79,3 +79,25 @@ html, body {
     @apply bg-background text-foreground;
   }
 }
+
+.project-button-animation {
+  transition: background cubic-bezier(.35,0,0,1) .5s;
+}
+
+.dot {
+  transform: translate3d(0, 0, 0);
+  transition: transform cubic-bezier(.35,0,0,1) .4s, background-color cubic-bezier(.35,0,0,1) .5s;
+}
+
+.text-button-animation {
+  transform: translate3d(0, 0, 0);
+  transition: transform cubic-bezier(.35,0,0,1) .5s, cubic-bezier(.35,0,0,1) .3s;
+}
+
+.project-button-animation:hover .dot {
+  transform: translate3d(5em, 0, 0) scale(35);
+}
+
+.project-button-animation:hover .text-button-animation {
+  transform: translate3d(-10%, 0, 0);
+}

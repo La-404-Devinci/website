@@ -1,7 +1,7 @@
+import { useTranslations } from 'next-intl';
 import Arrow from "../arrow";
 import H2 from "../heading2";
 import MemberCard from "../member-card";
-import {useTranslations} from 'next-intl';
 
 const members = [
   {
@@ -13,14 +13,14 @@ const members = [
   {
     "name": "Mattéo",
     "position": "Secretary・Fullstack Developer",
-    "image": "matteo.jpg",
     "slug": "secretary",
+    "image": "matteo.jpg",
   },
   {
     "name": "Michel",
     "position": "Treasurer・Fullstack Developer",
-    "image": "michel.png",
     "slug": "treasurer",
+    "image": "michel.png",
   },
 ]
 
@@ -30,7 +30,7 @@ const TeamSection = () => {
 
   const t = useTranslations('TeamSection');
   return ( 
-    <div className="w-full max-w-[1700px] mx-auto mt-80 px-5 lg:px-10">
+    <div className="w-full max-w-[1700px] mx-auto mt-80 px-4 lg:px-10">
       <div className="flex justify-between sm:items-end flex-col 
         sm:flex-row"
         >
