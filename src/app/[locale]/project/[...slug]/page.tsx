@@ -43,11 +43,11 @@ const ProjectPage = () => {
           </a>
         </nav>
         <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mt-5">
-          <div className="max-w-2xl flex flex-col flex-wrap gap-10">
+          <div className="max-w-2xl flex flex-col gap-10">
             <ProjectH1>
               {t(`${slug}.title`)}
             </ProjectH1>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 flex-wrap">
               <LaunchProjectButton>
                 {t("launch-button")}
               </LaunchProjectButton>

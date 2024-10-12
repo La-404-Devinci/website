@@ -24,7 +24,7 @@ const SourceCodeButton = ({ children, href }: SourceCodeButtonProps) => {
       ref={buttonRef}
       href={href} 
       target="_blank" 
-      className="relative flex items-center py-4 px-6 rounded-full border border-gray-50 
+      className="hidden relative sm:flex items-center py-4 px-6 rounded-full border border-gray-50 
         w-fit uppercase font-semibold tracking-tight group overflow-hidden h-12 lg:h-14"
     >
       <div 
