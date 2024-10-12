@@ -1,8 +1,6 @@
 "use client";
 
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface LaunchProjectButtonProps {
   children: React.ReactNode;
@@ -10,25 +8,13 @@ interface LaunchProjectButtonProps {
 
 const LaunchProjectButton = ({ children }: LaunchProjectButtonProps) => {
 
-  const [isMounted, setIsMounted] = useState(false);
-  const isViewLarge = useMediaQuery("(min-width: 1024px)");
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) return null;
-
   return ( 
     <a 
       href="" 
       target="_blank" 
-      className={cn(
-        isViewLarge ? "h-14" : "h-12",
-        `flex items-center py-4 px-6 rounded-full
-        bg-gray-50 gap-5 w-fit uppercase font-semibold tracking-tight group overflow-hidden 
-          project-button-animation`
-      )}
+      className="flex items-center py-4 px-6 rounded-full
+      bg-gray-50 gap-5 w-fit uppercase font-semibold tracking-tight group overflow-hidden 
+        project-button-animation h-12 lg:h-14"
     >
       <span className="content-none w-2 h-2 rounded-full bg-gray-950 group-hover:bg-blue-500 dot origin-center
       z-10"
