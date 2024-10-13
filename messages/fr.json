@@ -5,7 +5,7 @@
     "404-devinci": "404 Devinci"
   },
   "ProjectsSection": {
-    "title": "Ce que nous avons fait",
+    "title": "Nos réalisations",
     "pixel-war": "Pixel War",
     "hacker-journey": "Hacker Journey",
     "forum-associatif": "Forum Associatif"
@@ -48,7 +48,9 @@
       "agency-name": "Agence",
       "agency-value": "404 Devinci",
       "services": "UI/UX design, Development, Concept",
-      "images": "/img/pixelwar.png"
+      "images": "/img/pixelwar.png",
+      "source-link": "https://github.com/La-404-Devinci/pixel-war",
+      "project-link": "https://war.404devinci.fr/"
     },
     "hacker-journey": {
       "title": "Hacker Journey",
@@ -58,7 +60,9 @@
       "agency-name": "Agence",
       "agency-value": "404 Devinci",
       "services": "UI/UX design, Development, Concept",
-      "images": "/img/hackerjourney.png"
+      "images": "/img/hackerjourney.png",
+      "source-link": "https://github.com/Kan-A-Pesh/hack-journey",
+      "project-link": "https://hack.404devinci.fr/"
     },
     "forum-associatif": {
       "title": "Forum Associatif",
@@ -68,10 +72,13 @@
       "agency-name": "Agence",
       "agency-value": "404 Devinci",
       "services": "UI/UX design, Developpemnt, Concept",
-      "images": "/img/forumassociatif.png"
+      "images": "/img/forumassociatif.png",
+      "source-link": "https://github.com/La-404-Devinci/forum-associatif-numerique",
+      "project-link": "https://www.forum-associatif-numerique.fr/"
     },
     "close-button": "Fermer",
-    "launch-button": "Lancer le projet"
+    "launch-button": "Lancer le projet",
+    "source-code": "Code source"
   }
 
 }

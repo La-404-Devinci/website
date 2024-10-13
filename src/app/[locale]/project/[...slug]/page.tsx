@@ -1,17 +1,30 @@
 "use client";
 
 import LaunchProjectButton from "@/components/buttons/launch-project-button";
+import SourceCodeButton from "@/components/buttons/source-code-button";
 import ProjectH1 from "@/components/project-heading1";
 import ProjectImage from "@/components/project-image";
 import Footer from "@/components/sections/footer";
 import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 
+const projectsList = [
+  "pixel-war",
+  "hacker-journey",
+  "forum-associatif"
+]
 
 const ProjectPage = () => {
 
-  const { slug } = useParams();
   const t = useTranslations("ProjectPage"); 
+  const params = useParams<{ locale: string; slug: string[] }>();
+  const slug = params.slug[0];
+
+  
+  if (!projectsList.includes(slug)) {
+    notFound();
+  }
+  
   const services = (t(`${slug}.services`)).split(", ");
   const images = (t(`${slug}.images`)).split(", ");
   
@@ -34,9 +47,14 @@ const ProjectPage = () => {
             <ProjectH1>
               {t(`${slug}.title`)}
             </ProjectH1>
-            <LaunchProjectButton>
-              {t("launch-button")}
-            </LaunchProjectButton>
+            <div className="flex items-center gap-4 flex-wrap">
+              <LaunchProjectButton href={t(`${slug}.project-link`)}>
+                {t("launch-button")}
+              </LaunchProjectButton>
+              <SourceCodeButton href={t(`${slug}.source-link`)}>
+                {t("source-code")}
+              </SourceCodeButton>
+            </div>
           </div>
           <div className="w-full lg:max-w-lg">
             <p className="text-gray-300 font-medium">
