@@ -48,7 +48,7 @@ const ProjectPage = () => {
               {t(`${slug}.title`)}
             </ProjectH1>
             <div className="flex items-center gap-4 flex-wrap">
-              <LaunchProjectButton>
+              <LaunchProjectButton href={t(`${slug}.project-link`)}>
                 {t("launch-button")}
               </LaunchProjectButton>
               <SourceCodeButton href={t(`${slug}.source-link`)}>

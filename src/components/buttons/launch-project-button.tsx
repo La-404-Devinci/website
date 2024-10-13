@@ -4,13 +4,14 @@ import React from "react";
 
 interface LaunchProjectButtonProps {
   children: React.ReactNode;
+  href: string;
 }
 
-const LaunchProjectButton = ({ children }: LaunchProjectButtonProps) => {
+const LaunchProjectButton = ({ children, href }: LaunchProjectButtonProps) => {
 
   return ( 
     <a 
-      href="" 
+      href={href} 
       target="_blank" 
       className="flex items-center py-4 px-6 rounded-full
       bg-gray-50 gap-5 w-fit uppercase font-semibold tracking-tight group overflow-hidden 
