@@ -79,6 +79,11 @@
     "close-button": "Fermer",
     "launch-button": "Lancer le projet",
     "source-code": "Code source"
+  },
+  "NotFoundPage": {
+    "title": "Non trouvée",
+    "description": "C'est désert ici, le dinosaure a mangé la page que vous cherchez.",
+    "back-home": "Retourner à l'accueil"
   }
 
 }
