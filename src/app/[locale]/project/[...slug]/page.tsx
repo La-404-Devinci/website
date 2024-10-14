@@ -1,32 +1,55 @@
 "use client";
 
+import forumAssociatif from "@/assets/projects/forumassociatif.png";
+import hackerJourney from "@/assets/projects/hackerjourney.png";
+import pixelwar from "@/assets/projects/pixelwar.png";
 import LaunchProjectButton from "@/components/buttons/launch-project-button";
 import SourceCodeButton from "@/components/buttons/source-code-button";
 import ProjectH1 from "@/components/project-heading1";
 import ProjectImage from "@/components/project-image";
 import Footer from "@/components/sections/footer";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 
 const projectsList = [
-  "pixel-war",
-  "hacker-journey",
-  "forum-associatif"
+  {
+    "slug": "pixel-war",
+    "title": "Pixel War",
+    "images": [pixelwar],
+    "source-link": "https://github.com/La-404-Devinci/pixel-war",
+    "project-link": "https://war.404devinci.fr/"
+
+  },
+  {
+    "slug": "hacker-journey",
+    "title": "Hacker's Journey",
+    "images": [hackerJourney],
+    "source-link": "https://github.com/Kan-A-Pesh/hack-journey",
+    "project-link": "https://hack.404devinci.fr/"
+  },
+  {
+    "slug": "forum-associatif",
+    "title": "Forum Associatif",
+    "images": [forumAssociatif],
+    "source-link": "https://github.com/La-404-Devinci/forum-associatif-numerique",
+    "project-link": "https://www.forum-associatif-numerique.fr/"
+  },
 ]
 
 const ProjectPage = () => {
 
+  const locale = useLocale();
   const t = useTranslations("ProjectPage"); 
   const params = useParams<{ locale: string; slug: string[] }>();
-  const slug = params.slug[0];
-
+  const slug = params.slug[0];  
   
-  if (!projectsList.includes(slug)) {
+  if (!projectsList.find((project) => project.slug === slug)) {
     notFound();
   }
   
   const services = (t(`${slug}.services`)).split(", ");
-  const images = (t(`${slug}.images`)).split(", ");
+  const images = projectsList.find((project) => project.slug === slug)?.images;
   
   return ( 
     <div>
@@ -91,13 +114,39 @@ const ProjectPage = () => {
           </div>
         </div>
       </header>
-      <div className="w-full px-4 lg:px-10 mx-auto mt-20 pb-96 flex flex-col 
+      <div className="w-full px-4 lg:px-10 mx-auto mt-20 flex flex-col 
         gap-5"
       >
-        {images.map((image, index) => (
+        {images?.map((image, index) => (
           <ProjectImage key={`image:${index}`} image={image} />
         ))}
       </div>
+      <section className="px-4 lg:px-10 w-full max-w-[1700px] mx-auto py-44 flex flex-col gap-10">
+        <h2 className="text-xl md:text-3xl xl:text-4xl text-gray-50 text-balance py-2 md:py-5 border-t border-b border-gray-800">
+          {t("heading-2")}
+        </h2>
+        <div className="w-full flex flex-col md:flex-row gap-4 items-start">
+          {projectsList.map((project, index) => (
+            slug !== project.slug && (
+              <div key={`project:${index}`} className="w-full flex flex-col gap-2">
+                <a href={`/${locale}/project/${project.slug}`} className="w-full aspect-video overflow-hidden group">
+                  <Image
+                    src={project.images[0]}
+                    alt={project.slug}
+                    sizes="100%"
+                    width={0}
+                    height={0}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform cursor-pointer"
+                  />
+                </a>
+                <h3 className="text-xl md:text-2xl xl:text-3xl text-gray-50">
+                  {(t(`${project.slug}.title`)).split(", ")}
+                </h3>
+              </div>
+            )
+          ))}
+        </div>
+      </section>
       <Footer />
     </div>
    );

@@ -1,14 +1,15 @@
+import { ReactNode } from "react";
 import { montserrat } from "./font";
 import "./globals.css";
-import { ReactNode } from "react";
 
+import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { Providers } from "./providers";
 
 
 export function generateStaticParams() {
@@ -39,9 +40,11 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={montserrat.className}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <Providers>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </Providers>
       </body>
     </html>
   );

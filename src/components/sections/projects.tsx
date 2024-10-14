@@ -1,5 +1,8 @@
 import H2 from "../heading2";
 import Project from "../project";
+import pixelwar from "@/assets/projects/pixelwar.png";
+import hackerJourney from "@/assets/projects/hackerjourney.png";
+import forumAssociatif from "@/assets/projects/forumassociatif.png";
 
 import { useLocale, useTranslations } from 'next-intl';
 
@@ -8,19 +11,19 @@ const projects = [
     "name": "Pixel War",
     "slug": "pixel-war",
     "date": "2023-2024",
-    "image": "pixelwar.png",
+    "image": pixelwar,
   },
   {
     "name": "Hacker's Journey",
     "slug": "hacker-journey",
     "date": "2023-2024",
-    "image": "hackerjourney.png",
+    "image": hackerJourney,
   },
   {
     "name": "Forum Associatif",
     "slug": "forum-associatif",
     "date": "2023-2024",
-    "image": "forumassociatif.png",
+    "image": forumAssociatif,
   },
 ]
 

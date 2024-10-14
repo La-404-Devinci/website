@@ -1,3 +1,4 @@
+import dino from "@/assets/dino.svg";
 import Image from "next/image";
 import AnimatedHeading1 from "../animated-heading1";
 import LocaleSwitcherSelect from "../buttons/select-locale";
@@ -26,7 +27,7 @@ const Header = () => {
             translate-x-1/2 translate-y-1/2 blur-3xl"
           />
           <Image 
-            src="./img/dino.svg"
+            src={dino}
             alt="mascotte 404 devinci" 
             width={300} 
             height={300}

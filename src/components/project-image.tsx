@@ -1,13 +1,12 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRef } from "react";
 
 interface ProjectImageProps {
-  image: string;
+  image: StaticImageData;
 }
-
 
 const ProjectImage = ({ image }: ProjectImageProps) => {
 
