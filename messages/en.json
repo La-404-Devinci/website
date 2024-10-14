@@ -79,6 +79,11 @@
     "close-button": "Close",
     "launch-button": "Launch project",
     "source-code": "Source code"
+  },
+  "NotFoundPage": {
+    "title": "Not found",
+    "description": "It's deserted here, the dinosaur ate the page you're looking for.",
+    "back-home": "Return Home"
   }
 
 }
