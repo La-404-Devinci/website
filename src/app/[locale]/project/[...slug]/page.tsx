@@ -43,13 +43,14 @@ const ProjectPage = () => {
   const t = useTranslations("ProjectPage"); 
   const params = useParams<{ locale: string; slug: string[] }>();
   const slug = params.slug[0];  
+
+  const currentProject = projectsList.find((project) => project.slug === slug);
   
-  if (!projectsList.find((project) => project.slug === slug)) {
+  if (!currentProject) {
     notFound();
   }
   
   const services = (t(`${slug}.services`)).split(", ");
-  const images = projectsList.find((project) => project.slug === slug)?.images;
   
   return ( 
     <div>
@@ -71,10 +72,10 @@ const ProjectPage = () => {
               {t(`${slug}.title`)}
             </ProjectH1>
             <div className="flex items-center gap-4 flex-wrap">
-              <LaunchProjectButton href={t(`${slug}.project-link`)}>
+              <LaunchProjectButton href={currentProject["project-link"]}>
                 {t("launch-button")}
               </LaunchProjectButton>
-              <SourceCodeButton href={t(`${slug}.source-link`)}>
+              <SourceCodeButton href={currentProject["source-link"]}>
                 {t("source-code")}
               </SourceCodeButton>
             </div>
@@ -117,7 +118,7 @@ const ProjectPage = () => {
       <div className="w-full px-4 lg:px-10 mx-auto mt-20 flex flex-col 
         gap-5"
       >
-        {images?.map((image, index) => (
+        {currentProject.images?.map((image, index) => (
           <ProjectImage key={`image:${index}`} image={image} />
         ))}
       </div>
