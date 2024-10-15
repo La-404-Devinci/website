@@ -5,6 +5,7 @@ import cn from "@/utils/function";
 import { ProjectType } from "@/utils/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface ProjectProps {
@@ -32,16 +33,16 @@ const Project = ({ project, index, locale }: ProjectProps) => {
   
   if(!isComputerOrLarger) {
     return (
-      <a href={`${locale}/project/${project.slug}`} className="w-full">
+      <Link href={`/${locale}/project/${project.slug}`} className="w-full">
         <MobileProject project={project} index={index} />
-      </a>
+      </Link>
     )
   }
 
   return (
-    <a href={`${locale}/project/${project.slug}`} className="w-full">
+    <Link href={`/${locale}/project/${project.slug}`} className="w-full">
       <DesktopProject project={project} index={index} />
-    </a>
+    </Link>
   )
 }
  

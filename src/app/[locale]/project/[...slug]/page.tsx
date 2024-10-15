@@ -10,6 +10,7 @@ import ProjectImage from "@/components/project-image";
 import Footer from "@/components/sections/footer";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound, useParams } from "next/navigation";
 
 const projectsList = [
@@ -56,15 +57,15 @@ const ProjectPage = () => {
     <div>
       <header className="px-4 lg:px-10 w-full max-w-[1700px] mx-auto">
         <nav className="flex items-center justify-end w-full h-20">
-          <a
-            href="/" 
+          <Link
+            href={`/${locale}`} 
             className="text-gray-50 text-lg font-medium inline-flex items-center gap-2
             cursor-pointer group ">
             <div className="h-[1px] w-8 group-hover:w-12 transition-[width] bg-gray-50" />
             <span>
             {t("close-button")}
             </span>
-          </a>
+          </Link>
         </nav>
         <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mt-5">
           <div className="max-w-2xl flex flex-col gap-10">
