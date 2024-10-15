@@ -47,10 +47,7 @@
       "release-value": "2024",
       "agency-name": "Agence",
       "agency-value": "404 Devinci",
-      "services": "UI/UX design, Development, Concept",
-      "images": "/img/pixelwar.png",
-      "source-link": "https://github.com/La-404-Devinci/pixel-war",
-      "project-link": "https://war.404devinci.fr/"
+      "services": "UI/UX design, Development, Concept"
     },
     "hacker-journey": {
       "title": "Hacker Journey",
@@ -59,10 +56,7 @@
       "release-value": "2024",
       "agency-name": "Agence",
       "agency-value": "404 Devinci",
-      "services": "UI/UX design, Development, Concept",
-      "images": "/img/hackerjourney.png",
-      "source-link": "https://github.com/Kan-A-Pesh/hack-journey",
-      "project-link": "https://hack.404devinci.fr/"
+      "services": "UI/UX design, Development, Concept"
     },
     "forum-associatif": {
       "title": "Forum Associatif",
@@ -71,14 +65,12 @@
       "release-value": "2024",
       "agency-name": "Agence",
       "agency-value": "404 Devinci",
-      "services": "UI/UX design, Developpemnt, Concept",
-      "images": "/img/forumassociatif.png",
-      "source-link": "https://github.com/La-404-Devinci/forum-associatif-numerique",
-      "project-link": "https://www.forum-associatif-numerique.fr/"
+      "services": "UI/UX design, Developpemnt, Concept"
     },
     "close-button": "Fermer",
     "launch-button": "Lancer le projet",
-    "source-code": "Code source"
+    "source-code": "Code source",
+    "heading-2": "Projets associés"
   },
   "NotFoundPage": {
     "title": "Non trouvée",

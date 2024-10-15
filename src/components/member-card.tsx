@@ -1,3 +1,4 @@
+import placeholder from "@/assets/dino-gray.svg";
 import { MemberType } from "@/utils/types";
 import Image from "next/image";
 
@@ -13,7 +14,7 @@ const MemberCard = ({ member }: MemberCardProps) => {
       <div className="relative w-full overflow-hidden aspect-square bg-black">
         {member.image ? (
           <Image 
-            src={`/img/${member.image}`} 
+            src={member.image} 
             width={0}
             height={0}
             sizes="100%"
@@ -22,7 +23,7 @@ const MemberCard = ({ member }: MemberCardProps) => {
           />
         ) : (
           <Image 
-            src="/img/dino-gray.svg" 
+            src={placeholder} 
             width={200}
             height={200}
             alt={member.name}

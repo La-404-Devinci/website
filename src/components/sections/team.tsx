@@ -1,3 +1,6 @@
+import Matteo from "@/assets/teams/matteo.jpg";
+import Michel from "@/assets/teams/michel.png";
+import Nicolas from "@/assets/teams/nicolas.jpg";
 import { useTranslations } from 'next-intl';
 import Arrow from "../arrow";
 import H2 from "../heading2";
@@ -8,19 +11,19 @@ const members = [
     "name": "Nicolas",
     "position": "President・Fullstack Developer",
     "slug": "president",
-    "image": "nicolas.jpg",
+    "image": Nicolas,
   },
   {
     "name": "Mattéo",
     "position": "Secretary・Fullstack Developer",
     "slug": "secretary",
-    "image": "matteo.jpg",
+    "image": Matteo,
   },
   {
     "name": "Michel",
     "position": "Treasurer・Fullstack Developer",
     "slug": "treasurer",
-    "image": "michel.png",
+    "image": Michel,
   },
 ]
 
