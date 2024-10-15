@@ -71,6 +71,11 @@
     "launch-button": "Lancer le projet",
     "source-code": "Code source",
     "heading-2": "Projets associés"
+  },
+  "NotFoundPage": {
+    "title": "Non trouvée",
+    "description": "C'est désert ici, le dinosaure a mangé la page que vous cherchez.",
+    "back-home": "Retourner à l'accueil"
   }
 
 }
